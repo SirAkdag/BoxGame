@@ -12,13 +12,14 @@ public class Match {
         this.maxWeight = maxWeight;
     }
 
-    public void run() {
+    void run() {
         if (isCheck()) {
             while (this.f1.health>0 && this.f2.health>0){
-
+             f2.health = f1.hit(f2);
+             break;
             }
         } else {
-            System.out.println("Sporcularin sikletleri uyusmuyor !");
+            System.out.println("Sporcularin sikletleri uymuyor !");
         }
     }
 

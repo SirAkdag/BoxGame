@@ -16,7 +16,7 @@ public class Fighter {
     }
 
     int hit(Fighter foe) {
-        System.out.println(this.name + "=>" + foe.name + " " + this.damage + "hasar vurdu!");
+        System.out.println(this.name + " => " + foe.name + " " + this.damage + " hasar vurdu!");
         if (foe.health - this.damage < 0) {
             if(foe.isDodge()){
                 System.out.println(foe.name + " gelen hasari blokladi!");
